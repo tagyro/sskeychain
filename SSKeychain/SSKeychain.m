@@ -18,7 +18,7 @@ NSString *const kSSKeychainLabelKey = @"labl";
 NSString *const kSSKeychainLastModifiedKey = @"mdat";
 NSString *const kSSKeychainWhereKey = @"svce";
 
-#if __IPHONE_4_0 && TARGET_OS_IPHONE  
+#if __IPHONE_4_0 && TARGET_OS_IPHONE
 CFTypeRef SSKeychainAccessibilityType = NULL;
 #endif
 
@@ -110,7 +110,7 @@ CFTypeRef SSKeychainAccessibilityType = NULL;
 		return nil;
 	}
 	
-	CFTypeRef result = NULL;	
+	CFTypeRef result = NULL;
 	NSMutableDictionary *query = [self _queryForService:service account:account];
 #if __has_feature(objc_arc)
 	query[(__bridge id)kSecReturnData] = (__bridge id)kCFBooleanTrue;
@@ -214,7 +214,7 @@ CFTypeRef SSKeychainAccessibilityType = NULL;
 
 #pragma mark - Configuration
 
-#if __IPHONE_4_0 && TARGET_OS_IPHONE 
+#if __IPHONE_4_0 && TARGET_OS_IPHONE
 + (CFTypeRef)accessibilityType {
 	return SSKeychainAccessibilityType;
 }

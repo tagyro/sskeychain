@@ -112,7 +112,7 @@ extern NSString *const kSSKeychainWhereKey;
  
  @return An array of dictionaries containing the Keychain's accounts, or `nil` if the Keychain doesn't have any
  accounts. The order of the objects in the array isn't defined.
-  
+ 
  @see allAccounts
  */
 + (NSArray *)allAccounts:(NSError **)error;
@@ -186,7 +186,7 @@ extern NSString *const kSSKeychainWhereKey;
 + (NSString *)passwordForService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error;
 
 /**
- Returns the password data for a given account and service, or `nil` if the Keychain doesn't have data 
+ Returns the password data for a given account and service, or `nil` if the Keychain doesn't have data
  for the given parameters.
  
  @param serviceName The service for which to return the corresponding password.
@@ -203,7 +203,7 @@ extern NSString *const kSSKeychainWhereKey;
 + (NSData *)passwordDataForService:(NSString *)serviceName account:(NSString *)account;
 
 /**
- Returns the password data for a given account and service, or `nil` if the Keychain doesn't have data 
+ Returns the password data for a given account and service, or `nil` if the Keychain doesn't have data
  for the given parameters.
  
  @param serviceName The service for which to return the corresponding password.
